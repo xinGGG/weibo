@@ -20,15 +20,13 @@ class MainViewController: UITabBarController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
         
         addChildViewController()
         
         addComposeBtn()
         
-
-      
     }
     
  
@@ -47,6 +45,7 @@ class MainViewController: UITabBarController {
         addChildViewController(DiscoverTableViewController(), title: "发现", imageName: "tabbar_discover")
         addChildViewController(ProfileTableViewController(), title: "我", imageName: "tabbar_profile")
         // 设置标题 - 从内向外设置
+
     }
     
     /**

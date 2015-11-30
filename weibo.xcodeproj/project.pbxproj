@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21AF74341C0C816200AC7A5E /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF74331C0C816200AC7A5E /* BaseTableViewController.swift */; };
+		21AF74361C0C817000AC7A5E /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF74351C0C817000AC7A5E /* VisitorView.swift */; };
+		21AF74381C0C884600AC7A5E /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF74371C0C884600AC7A5E /* UILabel+Extension.swift */; };
 		4B4E56CD1C0C1AAA005010C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E56CC1C0C1AAA005010C7 /* AppDelegate.swift */; };
 		4B4E56CF1C0C1AAA005010C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E56CE1C0C1AAA005010C7 /* ViewController.swift */; };
 		4B4E56D21C0C1AAA005010C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4E56D01C0C1AAA005010C7 /* Main.storyboard */; };
@@ -17,10 +20,13 @@
 		4B4E56EF1C0C1C6B005010C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E56E71C0C1C6B005010C7 /* MainViewController.swift */; };
 		4B4E56F01C0C1C6B005010C7 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E56E91C0C1C6B005010C7 /* MessageTableViewController.swift */; };
 		4B4E56F11C0C1C6B005010C7 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E56EB1C0C1C6B005010C7 /* ProfileTableViewController.swift */; };
-		4B4E56F41C0C2753005010C7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E56F31C0C2753005010C7 /* Extension.swift */; };
+		4B4E56F41C0C2753005010C7 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E56F31C0C2753005010C7 /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21AF74331C0C816200AC7A5E /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		21AF74351C0C817000AC7A5E /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		21AF74371C0C884600AC7A5E /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		4B4E56C91C0C1AAA005010C7 /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4E56CC1C0C1AAA005010C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B4E56CE1C0C1AAA005010C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +39,7 @@
 		4B4E56E71C0C1C6B005010C7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4B4E56E91C0C1C6B005010C7 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		4B4E56EB1C0C1C6B005010C7 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
-		4B4E56F31C0C2753005010C7 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4B4E56F31C0C2753005010C7 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +86,9 @@
 		4B4E56DE1C0C1C6B005010C7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B4E56E11C0C1C6B005010C7 /* View */,
 				4B4E56DF1C0C1C6B005010C7 /* Model */,
 				4B4E56E01C0C1C6B005010C7 /* Tools */,
-				4B4E56E11C0C1C6B005010C7 /* View */,
 				4B4E56EC1C0C1C6B005010C7 /* ViewModel */,
 			);
 			path = Classes;
@@ -106,9 +112,9 @@
 		4B4E56E11C0C1C6B005010C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4B4E56E21C0C1C6B005010C7 /* Discover */,
 				4B4E56E41C0C1C6B005010C7 /* Home */,
 				4B4E56E61C0C1C6B005010C7 /* Main */,
+				4B4E56E21C0C1C6B005010C7 /* Discover */,
 				4B4E56E81C0C1C6B005010C7 /* Message */,
 				4B4E56EA1C0C1C6B005010C7 /* Profile */,
 			);
@@ -135,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				4B4E56E71C0C1C6B005010C7 /* MainViewController.swift */,
+				21AF74331C0C816200AC7A5E /* BaseTableViewController.swift */,
+				21AF74351C0C817000AC7A5E /* VisitorView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -165,7 +173,8 @@
 		4B4E56F21C0C271A005010C7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				4B4E56F31C0C2753005010C7 /* Extension.swift */,
+				4B4E56F31C0C2753005010C7 /* UIButton+Extension.swift */,
+				21AF74371C0C884600AC7A5E /* UILabel+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -241,14 +250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21AF74381C0C884600AC7A5E /* UILabel+Extension.swift in Sources */,
+				21AF74341C0C816200AC7A5E /* BaseTableViewController.swift in Sources */,
 				4B4E56F11C0C1C6B005010C7 /* ProfileTableViewController.swift in Sources */,
 				4B4E56EE1C0C1C6B005010C7 /* HomeTableViewController.swift in Sources */,
 				4B4E56CF1C0C1AAA005010C7 /* ViewController.swift in Sources */,
 				4B4E56ED1C0C1C6B005010C7 /* DiscoverTableViewController.swift in Sources */,
 				4B4E56CD1C0C1AAA005010C7 /* AppDelegate.swift in Sources */,
 				4B4E56F01C0C1C6B005010C7 /* MessageTableViewController.swift in Sources */,
+				21AF74361C0C817000AC7A5E /* VisitorView.swift in Sources */,
 				4B4E56EF1C0C1C6B005010C7 /* MainViewController.swift in Sources */,
-				4B4E56F41C0C2753005010C7 /* Extension.swift in Sources */,
+				4B4E56F41C0C2753005010C7 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +410,7 @@
 				4B4E56DD1C0C1AAA005010C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

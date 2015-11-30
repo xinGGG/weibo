@@ -8,8 +8,9 @@
 
 import UIKit
 
-class HomeTableViewController: UITableViewController {
+class HomeTableViewController: BaseTableViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +19,8 @@ class HomeTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        visitorView?.setupInfo(nil, title: "关注一些人，回这里看看有什么惊喜")
     }
 
     override func didReceiveMemoryWarning() {
